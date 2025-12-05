@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-brand-light: #819b57;
+  --color-brand-dark: #465929;
+
+  --color-primary-light: #faf4ea;
+  --color-primary-dark: #31261a;
+
+  --color-secondary-light: #cfcfbc;
+  --color-secondary-dark: #a18268;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: var(--color-primary-dark);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+}
+
+span {
+  color: var(--color-brand-light);
+}
+
+address {
+  font-style: normal;
+}
+
+/* Header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 6.25rem;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  color: var(--color-primary-light);
+  background-color: var(--color-brand-light);
+  border: 2px solid var(--color-brand-light);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--color-brand-dark);
+  background-color: transparent;
+}
+
+.link {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.link:hover {
+  color: var(--color-brand-light);
+  font-weight: 600;
+}
+
+/* Section 1 */
+.section-1 {
+  background-image: url(img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50rem;
+}
+
+.title {
+  color: var(--color-primary-light);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 8rem;
+}
+
+.advantages-list {
+  color: var(--color-primary-light);
+  background-color: var(--color-brand-light);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7rem;
+  height: 4rem;
+  align-items: center;
+}
+/* інше */
+.section-title {
+  color: var(--color-primary-dark);
+}
