@@ -24,6 +24,13 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
+  background-color: var(--color-primary-light);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
 }
 
 ul {
@@ -38,17 +45,51 @@ address {
   font-style: normal;
 }
 
+/* інше */
+.section-title {
+  color: var(--color-primary-dark);
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--color-primary-light);
+}
+.text-brand {
+  color: var(--color-brand-light);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
 /* Header */
+.header {
+  position: absolute;
+  width: 100%;
+  padding-top: 2rem;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
-  margin: 0 6.25rem;
+  margin: 0 12rem;
   align-items: center;
+}
+
+.header-container nav {
+  flex: 1;
 }
 
 .header-nav {
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  padding: 0 9.5rem;
 }
 
 .button {
@@ -56,32 +97,38 @@ address {
   background-color: var(--color-brand-light);
   border: 2px solid var(--color-brand-light);
   border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.875rem;
   cursor: pointer;
+  padding: 1rem 2rem;
 }
 
 .button:hover {
   color: var(--color-brand-dark);
-  background-color: transparent;
+  background-color: var(--color-primary-light);
 }
 
-.link {
+header .link {
   color: var(--color-primary-light);
   text-decoration: none;
   font-weight: 400;
 }
 
-.link:hover {
+header .link:hover {
   color: var(--color-brand-light);
-  font-weight: 600;
+  transition: 0.3s;
 }
 
-/* Section 1 */
+/* Section 1 Modern Bakery */
 .section-1 {
   background-image: url(img/background.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .title {
@@ -97,11 +144,83 @@ address {
   background-color: var(--color-brand-light);
   display: flex;
   justify-content: space-between;
-  padding: 0 7rem;
+  padding: 0 20.75rem;
   height: 4rem;
   align-items: center;
 }
-/* інше */
-.section-title {
-  color: var(--color-primary-dark);
+
+/* Section 2 New Formats Traditions */
+.traditions-section-title {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 0%;
+  line-height: 1;
+}
+
+.traditions-section-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.traditions-section-content {
+  max-width: 44.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.625rem;
+}
+
+.traditions-section-img {
+  border-radius: 400px 400px 0 0;
+}
+
+/* Section 3 Our chef */
+
+/* Section 4 Formats */
+
+/* Section 5 Met to bakers (Forms) */
+
+/* Footer */
+footer {
+  background-color: #31261a;
+  color: var(--color-primary-light);
+  font-weight: 400;
+  padding: 0 12rem;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-nav {
+  display: flex;
+}
+
+.footer-address {
+  display: flex;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* temp */
+.section-2 {
+  background-color: var(--color-primary-light);
+  margin: 0 20.75rem;
+}
+
+.section-3 {
+  background-color: brown;
+  margin: 0 20.75rem;
+}
+
+.section-4 {
+  background-color: lightblue;
+  margin: 0 20.75rem;
+}
+.section-5 {
+  background-color: aqua;
+  margin: 0 20.75rem;
+  margin-bottom: 6rem;
 }
