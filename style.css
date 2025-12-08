@@ -150,6 +150,10 @@ header .link:hover {
 }
 
 /* Section 2 New Formats Traditions */
+.section-2 {
+  margin: 0 20.75rem;
+}
+
 .traditions-section-title {
   font-size: 4rem;
   font-weight: 900;
@@ -173,7 +177,38 @@ header .link:hover {
   border-radius: 400px 400px 0 0;
 }
 
-/* Section 3 Our chef */
+/* Section 3 Our chefs */
+.section-3 {
+  margin: 0 20.75rem;
+}
+
+.chefs-section-title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.chefs-section-title span {
+  color: var(--color-brand-dark);
+}
+
+.chefs-section-content {
+  display: flex;
+}
+
+.chefs-card {
+  display: flex;
+}
+
+.chefs-card-text {
+  color: var(--color-primary-dark);
+  font-weight: 400;
+}
+
+.chefs-card-text-title {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
 
 /* Section 4 Formats */
 
@@ -205,16 +240,6 @@ footer {
 }
 
 /* temp */
-.section-2 {
-  background-color: var(--color-primary-light);
-  margin: 0 20.75rem;
-}
-
-.section-3 {
-  background-color: brown;
-  margin: 0 20.75rem;
-}
-
 .section-4 {
   background-color: lightblue;
   margin: 0 20.75rem;
