@@ -81,14 +81,22 @@
             <div>
               <li>
                 <article class="chefs-card">
-                  <img src="/img/chef_1.jpg" alt="Шеф-кухар Анастасія" />
+                  <img
+                    class="chefs-section-content-img"
+                    src="/img/chef_1.jpg"
+                    alt="Шеф-кухар Анастасія"
+                  />
                   <div class="chefs-card-text">
                     <h3 class="chefs-card-text-title">Настя</h3>
                     <p>Привіт, я Настя!</p>
                     <p>
-                      Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.
+                      Вже 10 років, я втілюю<br />
+                      у життя цікаві та смачні ідеї.
                     </p>
-                    <p>Я випечу для вас найсмачніщі вироби!</p>
+                    <p>
+                      Я випечу для вас<br />
+                      найсмачніщі вироби!
+                    </p>
                   </div>
                 </article>
               </li>
@@ -96,16 +104,24 @@
             <div>
               <li>
                 <article class="chefs-card">
-                  <img src="/img/chef_2.jpg" alt="Шеф-кухар Владислав" />
+                  <img
+                    class="chefs-section-content-img"
+                    src="/img/chef_2.jpg"
+                    alt="Шеф-кухар Владислав"
+                  />
                   <div class="chefs-card-text">
                     <h3 class="chefs-card-text-title">Влад</h3>
                     <p>Привіт, я Влад!</p>
                     <p>
-                      Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша
-                      любов, з якою ми ділимось кожен раз з Вами через нашу
-                      випічку!
+                      Мій кодитерський стаж вже 18 років.<br />SHOP BEKERY - це
+                      наша любов, з<br />
+                      якою ми ділимось кожен раз з Вами<br />
+                      через нашу випічку!
                     </p>
-                    <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                    <p>
+                      Я зроблю для вас унікальну начинку<br />
+                      на будь який смак!
+                    </p>
                   </div>
                 </article>
               </li>
@@ -114,8 +130,8 @@
         </div>
       </section>
       <section class="section-4" id="formats">
-        <h2 class="section-title">Формати</h2>
-        <ul>
+        <h2 class="formats-section-title section-title">Формати</h2>
+        <ul class="formats-section-list">
           <li>
             <article>
               <h3 lang="en">Walrus</h3>
@@ -155,62 +171,77 @@
         </ul>
       </section>
       <section class="section-5" id="contact">
-        <h2 class="section-title">Приєднуйся до мережі пекарень</h2>
-        <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-        <!--Контактна форма-->
-        <form name="contact-form">
-          <div class="contact-section-form">
-            <label class="input-label" for="user-name">Ім'я</label>
-            <input
-              class="input-form"
-              type="text"
-              name="user-name"
-              id="user-name"
-              placeholder="Ім'я"
-              required
-            />
-          </div>
+        <div class="contact-section-container">
+          <div class="contact-section-content-container">
+            <div class="contact-section-title-content">
+              <h2 class="contact-section-title section-title">
+                Приєднуйся до мережі пекарень
+              </h2>
+              <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+            </div>
+            <div class="contact-section-form-container">
+              <form name="contact-form">
+                <div class="contact-section-form">
+                  <label class="input-label" for="user-name">Ім'я</label>
+                  <input
+                    class="input-form"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Ім'я"
+                    required
+                  />
+                </div>
 
-          <div class="contact-section-form">
-            <label class="input-label" for="user-phone">Телефон</label>
-            <input
-              class="input-form"
-              type="tel"
-              name="user-phone"
-              id="user-phone"
-              placeholder="Телефон"
-              pattern="^\+[0-9]{12}"
-              required
-            />
-          </div>
+                <div class="contact-section-form">
+                  <label class="input-label" for="user-phone">Телефон</label>
+                  <input
+                    class="input-form"
+                    type="tel"
+                    name="user-phone"
+                    id="user-phone"
+                    placeholder="Телефон"
+                    pattern="^\+[0-9]{12}"
+                    required
+                  />
+                </div>
 
-          <div class="contact-section-form">
-            <label class="input-label" for="user-email">Електронна пошта</label>
-            <input
-              class="input-form"
-              type="email"
-              name="user-email"
-              id="user-email"
-              placeholder="Електронна пошта"
-              required
-            />
+                <div class="contact-section-form">
+                  <label class="input-label" for="user-email"
+                    >Електронна пошта</label
+                  >
+                  <input
+                    class="input-form"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Електронна пошта"
+                    required
+                  />
+                </div>
+                <button class="button" type="submit">Замовити дзвінок</button>
+                <p>
+                  Натискаючи на кнопку я погоджуюсь
+                  <span
+                    ><a class="contact-section-link link" href="#"
+                      >з політикою конфіденційності</a
+                    ></span
+                  >
+                </p>
+              </form>
+            </div>
           </div>
-        </form>
-
-        <button class="button" type="submit">Замовити дзвінок</button>
-        <p>
-          Натискаючи на кнопку я погоджуюсь
-          <span><a class="link" href="#">з політикою конфіденційності</a></span>
-        </p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1634470361782!2d30.488698376956076!3d50.45668098691455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1764847170729!5m2!1suk!2sua"
-          width="603"
-          height="595"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
+          <iframe
+            class="contact-section-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1634470361782!2d30.488698376956076!3d50.45668098691455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1764847170729!5m2!1suk!2sua"
+            width="603"
+            height="595"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
       </section>
     </main>
     <footer class="footer">

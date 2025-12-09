@@ -17,6 +17,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -182,10 +183,38 @@ header .link:hover {
   margin: 0 20.75rem;
 }
 
+.chefs-section-title-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
 .chefs-section-title {
   text-align: center;
   font-size: 4rem;
   font-weight: 900;
+  line-height: 1.3;
+  position: relative;
+}
+
+.chefs-section-title-container::before,
+.chefs-section-title-container::after {
+  content: '';
+  position: absolute;
+  width: 22rem;
+  border: 2px solid var(--color-secondary-light);
+  bottom: 1.5rem;
+  transform: translateY(50%);
+}
+
+.chefs-section-title-container::before {
+  left: 0;
+}
+
+.chefs-section-title-container::after {
+  right: 0;
 }
 
 .chefs-section-title span {
@@ -194,15 +223,20 @@ header .link:hover {
 
 .chefs-section-content {
   display: flex;
+  justify-content: space-between;
 }
 
 .chefs-card {
   display: flex;
+  gap: 2rem;
 }
 
 .chefs-card-text {
   color: var(--color-primary-dark);
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .chefs-card-text-title {
@@ -210,9 +244,65 @@ header .link:hover {
   font-size: 2.5rem;
 }
 
+.chefs-section-content-img {
+  border-radius: 8px 8px 8px 200px;
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 1.5px var(--color-secondary-dark);
+}
+
 /* Section 4 Formats */
+.section-4 {
+  margin: 0 20.75rem;
+  background-color: aqua;
+}
+
+.formats-section-title {
+  font-size: 4rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.formats-section-list {
+  display: flex;
+}
 
 /* Section 5 Met to bakers (Forms) */
+.section-5 {
+  margin: 0 20.75rem;
+  margin-bottom: 6rem;
+}
+
+.contact-section-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.contact-section-title {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+/* .contact-section-title-content {
+  margin-bottom: 2.625rem;
+} */
+
+.contact-section-content-container {
+  max-width: 38rem;
+}
+
+.contact-section-link {
+  color: black;
+  text-decoration: underline;
+}
+
+.contact-section-map {
+  border-radius: 16px;
+  width: 37.75rem;
+  height: 37.25rem;
+}
 
 /* Footer */
 footer {
@@ -237,15 +327,4 @@ footer {
 .footer-info {
   display: flex;
   flex-direction: column;
-}
-
-/* temp */
-.section-4 {
-  background-color: lightblue;
-  margin: 0 20.75rem;
-}
-.section-5 {
-  background-color: aqua;
-  margin: 0 20.75rem;
-  margin-bottom: 6rem;
 }
