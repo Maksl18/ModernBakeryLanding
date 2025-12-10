@@ -180,47 +180,51 @@
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
             </div>
             <div class="contact-section-form-container">
-              <form name="contact-form">
-                <div class="contact-section-form">
-                  <label class="input-label" for="user-name">Ім'я</label>
-                  <input
-                    class="input-form"
-                    type="text"
-                    name="user-name"
-                    id="user-name"
-                    placeholder="Ім'я"
-                    required
-                  />
-                </div>
+              <form class="contact-form" name="contact-form">
+                <div class="contact-form-and-button">
+                  <div class="contact-section-form">
+                    <!-- <label class="input-label" for="user-name">Ім'я</label> -->
+                    <input
+                      class="input-form"
+                      type="text"
+                      name="user-name"
+                      id="user-name"
+                      placeholder="Ім'я"
+                      required
+                    />
+                  </div>
 
-                <div class="contact-section-form">
-                  <label class="input-label" for="user-phone">Телефон</label>
-                  <input
-                    class="input-form"
-                    type="tel"
-                    name="user-phone"
-                    id="user-phone"
-                    placeholder="Телефон"
-                    pattern="^\+[0-9]{12}"
-                    required
-                  />
-                </div>
+                  <div class="contact-section-form">
+                    <!-- <label class="input-label" for="user-phone">Телефон</label> -->
+                    <input
+                      class="input-form"
+                      type="tel"
+                      name="user-phone"
+                      id="user-phone"
+                      placeholder="Телефон"
+                      pattern="^\+[0-9]{12}"
+                      required
+                    />
+                  </div>
 
-                <div class="contact-section-form">
-                  <label class="input-label" for="user-email"
-                    >Електронна пошта</label
-                  >
-                  <input
-                    class="input-form"
-                    type="email"
-                    name="user-email"
-                    id="user-email"
-                    placeholder="Електронна пошта"
-                    required
-                  />
+                  <div class="contact-section-form">
+                    <!-- <label class="input-label" for="user-email"
+                      >Електронна пошта</label
+                    > -->
+                    <input
+                      class="input-form"
+                      type="email"
+                      name="user-email"
+                      id="user-email"
+                      placeholder="Електронна пошта"
+                      required
+                    />
+                  </div>
+                  <button class="contact-section-button button" type="submit">
+                    Замовити дзвінок
+                  </button>
                 </div>
-                <button class="button" type="submit">Замовити дзвінок</button>
-                <p>
+                <p class="contact-section-link-text">
                   Натискаючи на кнопку я погоджуюсь
                   <span
                     ><a class="contact-section-link link" href="#"
