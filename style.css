@@ -253,7 +253,6 @@ header .link:hover {
 /* Section 4 Formats */
 .section-4 {
   margin: 0 20.75rem;
-  background-color: aqua;
 }
 
 .formats-section-title {
@@ -265,6 +264,164 @@ header .link:hover {
 
 .formats-section-list {
   display: flex;
+}
+
+.formats-section-article {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.formats-section-article img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+.formats-section-article-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    var(--color-primary-dark) 100%
+  );
+  border-radius: 16px;
+  background-size: cover;
+  padding: 15.5rem 2.5rem 1.5rem 1.5rem;
+  color: var(--color-primary-light);
+}
+
+.formats-section-article-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+.format-text p {
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+/* Slider */
+.formats-section-slider {
+  position: relative;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 3.75rem;
+}
+
+.formats-section-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.formats-section-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1.25rem;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.formats-section-list li {
+  flex: 0 0 calc(33.333% - 0.875rem);
+  max-width: calc(33.333% - 0.875rem);
+}
+
+.formats-section-list article {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Buttons */
+.formats-section-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.prev {
+  left: -1.375rem;
+}
+
+.next {
+  right: -1.375rem;
+}
+
+.btn-left-normal,
+.btn-right-normal {
+  position: absolute;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.btn-left-active,
+.btn-right-active {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.formats-section-btn:hover .btn-left-normal,
+.formats-section-btn:hover .btn-right-normal {
+  opacity: 0;
+}
+
+.formats-section-btn:hover .btn-left-active,
+.formats-section-btn:hover .btn-right-active {
+  opacity: 1;
+}
+
+/* Pagination */
+.formats-section-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background-color: var(--color-secondary-dark);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active,
+.dot:hover {
+  background: var(--color-brand-light);
+}
+
+/* Slider position */
+.slide-0 {
+  transform: translateX(0%);
+}
+.slide-1 {
+  transform: translateX(-33.333%);
+}
+.slide-2 {
+  transform: translateX(-66.666%);
 }
 
 /* Section 5 Join the bakery (Forms) */
