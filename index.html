@@ -27,7 +27,9 @@
             <li><a class="link" href="#contact">Контакти</a></li>
           </ul>
         </nav>
-        <button class="button" type="button">Замовити дзвінок</button>
+        <button class="button" type="button" id="openModal">
+          Замовити дзвінок
+        </button>
       </div>
     </header>
     <main>
@@ -391,13 +393,91 @@
       </div>
     </footer>
 
-    <!-- <div class="backdrop">
-      <div class="modal">
-        <button class="modal-btn-close" type="button">Close</button>
-        <form action=""></form>
-      </div>
+    <div id="overlay" class="overlay"></div>
+    <div
+      id="modal"
+      class="modal"
+      role="dialog"
+      aria-labelledby="modalTitle"
+      aria-modal="true"
+      aria-hidden="true"
+    >
+      <div class="modal-content">
+        <button
+          id="closeModal"
+          class="close"
+          aria-label="Закрити модальне вікно"
+        >
+          <img
+            src="img/modal_window_close_icon.png"
+            alt="Кнопка закриття модального вікна"
+          />
+        </button>
+        <div class="modal-title-content">
+          <h2 class="modal-title" id="modalTitle">Замовити дзвінок</h2>
+          <p class="modal-title-content-text">
+            Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
+          </p>
+        </div>
+        <div class="contact-section-form-container">
+          <form class="contact-form" name="contact-form">
+            <div class="modal-contact-form-and-button">
+              <div class="contact-section-form">
+                <!-- <label class="input-label" for="user-name">Ім'я</label> -->
+                <input
+                  class="input-form"
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                  placeholder="Ім'я"
+                  required
+                />
+              </div>
 
-    </div> -->
+              <div class="contact-section-form">
+                <!-- <label class="input-label" for="user-phone">Телефон</label> -->
+                <input
+                  class="input-form"
+                  type="tel"
+                  name="user-phone"
+                  id="user-phone"
+                  placeholder="Телефон"
+                  pattern="^\+[0-9]{12}"
+                  required
+                />
+              </div>
+
+              <div class="contact-section-form">
+                <!-- <label class="input-label" for="user-email"
+                      >Електронна пошта</label
+                    > -->
+                <input
+                  class="input-form"
+                  type="email"
+                  name="user-email"
+                  id="user-email"
+                  placeholder="Електронна пошта"
+                  required
+                />
+              </div>
+              <button class="modal-contact-section-button button" type="submit">
+                Замовити дзвінок
+              </button>
+            </div>
+            <p class="modal-link-text">
+              Натискаючи на кнопку я погоджуюсь
+              <span
+                ><a class="contact-section-link link" href="#"
+                  >з політикою конфіденційності</a
+                ></span
+              >
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <script src="slider.js"></script>
+    <script src="modal-window.js"></script>
   </body>
 </html>
