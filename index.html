@@ -18,7 +18,12 @@
   <body>
     <header class="header">
       <div class="header-container">
-        <a href="#"><img src="img/logo.svg" alt="logo" /></a>
+        <div class="header-container-logo-and-burger">
+          <a href="#"><img src="img/logo.svg" alt="logo" /></a>
+          <button class="mobile-menu-toggle" type="button">
+            <img src="img/burger_menu.svg" alt="Відкрити меню" />
+          </button>
+        </div>
         <nav>
           <ul class="header-nav">
             <li><a class="link" href="#traditions">Наші традиції</a></li>
@@ -246,6 +251,8 @@
             <span class="dot active" data-slide="0"></span>
             <span class="dot" data-slide="1"></span>
             <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+            <span class="dot" data-slide="4"></span>
           </div>
         </div>
       </section>
@@ -393,6 +400,7 @@
       </div>
     </footer>
 
+    <!-- Modal window -->
     <div id="overlay" class="overlay"></div>
     <div
       id="modal"
@@ -477,7 +485,28 @@
       </div>
     </div>
 
+    <!-- Burger menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <img
+          class="burger_menu_logo"
+          src="img/burger_menu_logo.svg"
+          alt="logo"
+        />
+        <button class="mobile-menu-close" type="button">
+          <img src="img/modal_window_close_icon.png" alt="Закрити меню" />
+        </button>
+      </div>
+      <ul class="mobile-menu-list">
+        <li><a href="#traditions">Наші традиції</a></li>
+        <li><a href="#chefs">Шеф-кухарі</a></li>
+        <li><a href="#formats">Формати</a></li>
+        <li><a href="#contact">Контакти</a></li>
+      </ul>
+    </div>
+
     <script src="slider.js"></script>
     <script src="modal-window.js"></script>
+    <script src="burger-menu.js"></script>
   </body>
 </html>

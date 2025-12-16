@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   openBtn.addEventListener('click', openModal);
   closeBtn.addEventListener('click', closeModal);
-  overlay.addEventListener('click', closeModal); // закрити кліком по затемненню
+  overlay.addEventListener('click', closeModal);
 
   // Закриття по клавіші Escape
   document.addEventListener('keydown', function (e) {
