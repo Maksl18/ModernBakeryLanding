@@ -2,7 +2,7 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern Bakery Landing</title>
     <!-- Fonts -->
@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <!-- Style -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
@@ -39,7 +39,7 @@
     </header>
     <main>
       <section>
-        <div class="section-1">
+        <div class="hero">
           <h1 class="title"><span>Сучасна</span> пекарня</h1>
         </div>
         <ul class="advantages-list">
@@ -48,7 +48,7 @@
           <li>Досвідчена управлінська команда</li>
         </ul>
       </section>
-      <section class="section-2" id="traditions">
+      <section class="traditions" id="traditions">
         <div class="traditions-section-container">
           <div class="traditions-section-content">
             <h2 class="traditions-section-title section-title">
@@ -77,15 +77,15 @@
           />
         </div>
       </section>
-      <section class="section-3" id="chefs">
+      <section class="chefs" id="chefs">
         <div class="chefs-section-title-container">
           <h2 class="chefs-section-title section-title">
             Наші найкращі <br /><span>шеф-кухарі</span>
           </h2>
         </div>
         <div>
-          <ul class="chefs-section-content">
-            <div>
+          <div class="chefs-section-content">
+            <ul>
               <li>
                 <article class="chefs-card">
                   <img
@@ -107,8 +107,8 @@
                   </div>
                 </article>
               </li>
-            </div>
-            <div>
+            </ul>
+            <ul>
               <li>
                 <article class="chefs-card">
                   <img
@@ -132,11 +132,11 @@
                   </div>
                 </article>
               </li>
-            </div>
-          </ul>
+            </ul>
+          </div>
         </div>
       </section>
-      <section class="section-4" id="formats">
+      <section class="formats" id="formats">
         <h2 class="formats-section-title section-title">Формати</h2>
         <div class="formats-section-slider">
           <button class="formats-section-btn prev" type="button">
@@ -256,7 +256,7 @@
           </div>
         </div>
       </section>
-      <section class="section-5" id="contact">
+      <section class="contact" id="contact">
         <div class="contact-section-container">
           <div class="contact-section-content-container">
             <div class="contact-section-title-content">
@@ -269,24 +269,26 @@
               <form class="contact-form" name="contact-form">
                 <div class="contact-form-and-button">
                   <div class="contact-section-form">
-                    <!-- <label class="input-label" for="user-name">Ім'я</label> -->
+                    <label class="input-label" for="user-name-main">Ім'я</label>
                     <input
                       class="input-form"
                       type="text"
                       name="user-name"
-                      id="user-name"
+                      id="user-name-main"
                       placeholder="Ім'я"
                       required
                     />
                   </div>
 
                   <div class="contact-section-form">
-                    <!-- <label class="input-label" for="user-phone">Телефон</label> -->
+                    <label class="input-label" for="user-phone-main"
+                      >Телефон</label
+                    >
                     <input
                       class="input-form"
                       type="tel"
                       name="user-phone"
-                      id="user-phone"
+                      id="user-phone-main"
                       placeholder="Телефон"
                       pattern="^\+[0-9]{12}"
                       required
@@ -294,14 +296,14 @@
                   </div>
 
                   <div class="contact-section-form">
-                    <!-- <label class="input-label" for="user-email"
+                    <label class="input-label" for="user-email-main"
                       >Електронна пошта</label
-                    > -->
+                    >
                     <input
                       class="input-form"
                       type="email"
                       name="user-email"
-                      id="user-email"
+                      id="user-email-main"
                       placeholder="Електронна пошта"
                       required
                     />
@@ -349,46 +351,46 @@
             </ul>
           </nav>
           <address class="footer-address">
-            <ul class="footer-address-list">
-              <li>
-                <a class="address-link" href="#">+ 38 (096) 000 00 07</a>
-                <!--<a href="tel:+380960000007">+ 38 (096) 000 00 07</a>-->
-              </li>
-              <li>
-                <a class="address-link" href="#">shopbakery@gmail.com</a>
-                <!--<a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>-->
-              </li>
-              <li>
-                <a
-                  class="address-link"
-                  href="https://maps.app.goo.gl/vSdcLTRHXd9mB1mk8"
-                  target="_blank"
-                  >Україна, м. Київ, вул. Січових Стрільців 54</a
-                >
-              </li>
-              <div>
-                <ul class="social-network">
-                  <li>
-                    <a
-                      class="social-network-facebook link"
-                      href="https://facebook.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      ><img src="img/facebook_icon.svg" alt="facebook"
-                    /></a>
-                  </li>
-                  <li>
-                    <a
-                      class="social-network-instagram link"
-                      href="https://instagram.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      ><img src="img/instagram_icon.svg" alt="instagram"
-                    /></a>
-                  </li>
-                </ul>
-              </div>
-            </ul>
+            <div class="footer-address-list">
+              <ul class="footer-address-list-contact">
+                <li>
+                  <a class="address-link" href="#">+ 38 (096) 000 00 07</a>
+                  <!--<a href="tel:+380960000007">+ 38 (096) 000 00 07</a>-->
+                </li>
+                <li>
+                  <a class="address-link" href="#">shopbakery@gmail.com</a>
+                  <!--<a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>-->
+                </li>
+                <li>
+                  <a
+                    class="address-link"
+                    href="https://maps.app.goo.gl/vSdcLTRHXd9mB1mk8"
+                    target="_blank"
+                    >Україна, м. Київ, вул. Січових Стрільців 54</a
+                  >
+                </li>
+              </ul>
+              <ul class="social-network">
+                <li>
+                  <a
+                    class="social-network-facebook link"
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img src="img/facebook_icon.svg" alt="facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    class="social-network-instagram link"
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img src="img/instagram_icon.svg" alt="instagram"
+                  /></a>
+                </li>
+              </ul>
+            </div>
           </address>
           <div class="footer-info">
             <a class="address-link" href="#">Політика конфіденційності</a>
@@ -431,24 +433,26 @@
           <form class="contact-form" name="contact-form">
             <div class="modal-contact-form-and-button">
               <div class="contact-section-form">
-                <!-- <label class="input-label" for="user-name">Ім'я</label> -->
+                <label class="input-label" for="user-name-modal">Ім'я</label>
                 <input
                   class="input-form"
                   type="text"
                   name="user-name"
-                  id="user-name"
+                  id="user-name-modal"
                   placeholder="Ім'я"
                   required
                 />
               </div>
 
               <div class="contact-section-form">
-                <!-- <label class="input-label" for="user-phone">Телефон</label> -->
+                <label class="input-label" for="user-phone-modal"
+                  >Телефон</label
+                >
                 <input
                   class="input-form"
                   type="tel"
                   name="user-phone"
-                  id="user-phone"
+                  id="user-phone-modal"
                   placeholder="Телефон"
                   pattern="^\+[0-9]{12}"
                   required
@@ -456,14 +460,14 @@
               </div>
 
               <div class="contact-section-form">
-                <!-- <label class="input-label" for="user-email"
-                      >Електронна пошта</label
-                    > -->
+                <label class="input-label" for="user-email-modal"
+                  >Електронна пошта</label
+                >
                 <input
                   class="input-form"
                   type="email"
                   name="user-email"
-                  id="user-email"
+                  id="user-email-modal"
                   placeholder="Електронна пошта"
                   required
                 />
@@ -505,8 +509,8 @@
       </ul>
     </div>
 
-    <script src="slider.js"></script>
-    <script src="modal-window.js"></script>
-    <script src="burger-menu.js"></script>
+    <script src="JS/slider.js"></script>
+    <script src="JS/modal-window.js"></script>
+    <script src="JS/burger-menu.js"></script>
   </body>
 </html>

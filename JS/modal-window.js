@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function openModal() {
     overlay.style.display = 'block';
-    modal.style.display = 'block';
+    modal.classList.add('open');
     // document.body.style.overflow = 'hidden'; // блокування скрол тіла
   }
 
   function closeModal() {
     overlay.style.display = 'none';
-    modal.style.display = 'none';
+    modal.classList.remove('open');
     document.body.style.overflow = '';
   }
 

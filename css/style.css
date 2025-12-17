@@ -121,12 +121,12 @@ header .link:hover {
 }
 
 /* Section 1 Modern Bakery */
-.section-1 {
-  background-image: url(img/background.jpg);
+.hero {
+  background-image: url(../img/background.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 50rem;
+  min-height: 50rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,7 +151,7 @@ header .link:hover {
 }
 
 /* Section 2 New Formats Traditions */
-.section-2 {
+.traditions {
   margin: 0 20.75rem;
 }
 
@@ -179,7 +179,7 @@ header .link:hover {
 }
 
 /* Section 3 Our chefs */
-.section-3 {
+.chefs {
   margin: 0 20.75rem;
 }
 
@@ -251,7 +251,7 @@ header .link:hover {
 }
 
 /* Section 4 Formats */
-.section-4 {
+.formats {
   margin: 0 20.75rem;
 }
 
@@ -414,7 +414,7 @@ header .link:hover {
 }
 
 /* Section 5 Join the bakery (Forms) */
-.section-5 {
+.contact {
   margin: 0 20.75rem;
   margin-bottom: 6rem;
 }
@@ -475,6 +475,14 @@ header .link:hover {
   transition: 0.3s ease;
 }
 
+.input-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
 .contact-section-button {
   display: block;
   margin: 0 auto 1rem;
@@ -504,7 +512,7 @@ header .link:hover {
 footer {
   height: 14rem;
   background-color: var(--color-primary-dark);
-  background-image: url(img/footer-background.svg);
+  background-image: url(../img/footer-background.svg);
   color: var(--color-primary-light);
   font-weight: 400;
   padding: 2rem 12rem;
@@ -518,7 +526,7 @@ footer::before {
   left: -2.375rem;
   width: 14rem;
   height: 25.625rem;
-  background-image: url(img/footer_bread_1.svg);
+  background-image: url(../img/footer_bread_1.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom left;
@@ -532,7 +540,7 @@ footer::after {
   top: 8rem;
   width: 25.5rem;
   height: 17.625rem;
-  background-image: url(img/footer_bread_2.svg);
+  background-image: url(../img/footer_bread_2.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -550,7 +558,8 @@ footer::after {
 
 .footer-nav-list,
 .footer-address-list,
-.footer-info {
+.footer-info,
+.footer-address-list-contact {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -612,14 +621,18 @@ footer .address-link:hover {
   z-index: 1000;
 }
 
+.modal.open {
+  display: block;
+}
+
 .modal-content::after {
   content: '';
   position: absolute;
   right: 0;
-  top: 40.5rem;
+  bottom: 0;
   width: 11.25rem;
   height: 15rem;
-  background-image: url(img/modal_window_img.png);
+  background-image: url(../img/modal_window_img.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -751,7 +764,7 @@ footer .address-link:hover {
   bottom: 1rem;
   width: 12.25rem;
   height: 15rem;
-  background-image: url(img/modal_window_img.png);
+  background-image: url(../img/modal_window_img.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -783,10 +796,10 @@ footer .address-link:hover {
     font-size: 14px;
   }
 
-  .section-2,
-  .section-3,
-  .section-4,
-  .section-5 {
+  .traditions,
+  .chefs,
+  .formats,
+  .contact {
     margin: 0 1.5rem;
   }
 
@@ -819,8 +832,8 @@ footer .address-link:hover {
     padding: 1rem;
     line-height: 1.1;
   }
-  .section-1 {
-    height: 34.5rem;
+  .hero {
+    min-height: 34.5rem;
     padding: 4rem 0;
   }
 
@@ -975,7 +988,7 @@ footer .address-link:hover {
     padding: 8rem 3rem;
   }
   .modal-content::after {
-    top: 36.5rem;
+    bottom: 0.5rem;
     width: 6.25rem;
     height: 7rem;
   }
