@@ -873,6 +873,9 @@ footer .address-link:hover {
     align-items: start;
     height: auto;
   }
+  .advantages {
+    background-color: rgba(0, 0, 0, 0);
+  }
 
   /* Traditions */
   .traditions-section-container {
@@ -922,7 +925,8 @@ footer .address-link:hover {
     max-width: 140px;
     box-shadow: -10px 8px 0 0 var(--color-primary-light),
       -10px 8px 0 1.5px var(--color-secondary-dark);
-    height: max-content;
+    height: 100%;
+    max-height: 16.125rem;
   }
 
   /* Formats slider */
