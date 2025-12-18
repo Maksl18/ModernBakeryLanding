@@ -56,7 +56,7 @@ class Slider {
 
   updateSizes() {
     const gap = parseFloat(getComputedStyle(this.list).gap) || 0;
-    this.slideWidth = this.list.children[0].offsetWidth + gap;
+    this.slideWidth = this.list.children[0].getBoundingClientRect().width + gap;
   }
 
   /* ---------- movement ---------- */
